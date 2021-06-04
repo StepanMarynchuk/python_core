@@ -1,6 +1,7 @@
 stars = {"Alnilam": 27000, "Spica": 22000, "Sun": 6000, "Artur": 4000, "Betelgeuse": 3000}
 
 # todo: try to use as a key star name from the stars list, it's a more convenient approach
+# or combine this function with for loop to iterate trough the list if stars
 def get_key(val):
     for key, value in stars.items():
         if val == value & val == 22000:
