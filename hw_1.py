@@ -49,3 +49,22 @@ print(list(stars.keys())[list(stars.values()).index(22000)], "is white")
 print(list(stars.keys())[list(stars.values()).index(6000)], "is yellow")
 print(list(stars.keys())[list(stars.values()).index(4000)], "is orange")
 print(list(stars.keys())[list(stars.values()).index(3000)], "is red")
+
+# 3 approach
+
+def get_color(temper, color='Currently no name star'):  # get_color function in order to get color name based on value of temperature
+    if temper ==22000:
+        color = "white"
+    elif temper == 27000:
+        color = 'blue'
+    elif temper== 6000:
+        color = 'yellow'
+    elif temper == 4000:
+        color = 'orange'
+    elif temper == 3000:
+        color = 'red'
+    return color
+
+for star in stars:               # output
+   star_color=get_color(stars[star])
+   print( f'{star} - {stars[star]} - is {star_color}' )
